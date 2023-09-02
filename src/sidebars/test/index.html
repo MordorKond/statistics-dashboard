@@ -8,11 +8,14 @@
         <meta name="generator" content="Hugo 0.104.2">
         <title>Sidebars · Bootstrap v5.2</title>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
         <!-- <link href="../main.css" rel="stylesheet"> -->
-        <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- ivo new style -->
         <!-- <div id='sidebar-expanded' class="flex-shrink-0 p-3 bg-white" style="width: 280px;visibility:collapse"> -->
@@ -344,103 +347,118 @@ margin-left: 72px;
                     </li>
                 </ul>
             </div>
+<!-- <i class="fa fa-bell"></i> -->
+  <!-- <i class="fa fa-commenting-o"></i> -->
+            <div class="vh-100 main-pane border border-4 border-danger w-100 ">
+                <!-- <div class="h-100 bg-primary border rounded-4 w-100 my-2 py-4 d-flex"> -->
+                <div><div class="top-nav-bar box bg-primary border" id="top-nav-bar">
+                        <button type="button" class="btn position-relative float-end">
+                            user@email.com
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button><button type="button" class="btn position-relative float-end">
+                            <i class="fa fa-commenting-o"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                        <button type="button" class="btn position-relative float-end">
+                            <i class="fa fa-bell"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
 
-            <div class="main-pane border border-4 border-danger w-100">
-
-                <!-- <div class="border h-25 container vstack gap-3 bg-primary rounded-4 w-100 py-4 my-2"> -->
-                <div class="h-50 bg-primary border rounded-4 w-100 my-2 py-4 d-flex">
-                    <div class="d-flex vstack align-items-center mt-auto border justify-content-center g-3 ">
-                        <h1  class="border" style="font-size:5rem">Welcome to JAS </h1>
-                        <span class="border ">some description of JAS </span>
-                            <button class="btn rounded-4 bg-danger d-inline-block">Button</button>
-                        <input class='rounded-4' type='text' />
-                    </div>
+                    </div></div>
+                <h1 class="breadcrumbs" id="breadcrumbs">
+                    Page Title
+                </h1>
+                <div class="options" id="options"> 
+                    <div class="share" id="share"> </div>
+                    <div class="filters" id="filters"> </div>
+                    <div class="settings" id="settings"> </div>
                 </div>
-                
-                <!-- <div class="h-auto border rounded w-100 container my-5"> -->
-                <div class="h-auto border rounded w-100 my-5">
-                    <h3 class="border">Recent visit reports </h3>
-                    <!-- cards -->
-                    <div class="row g-3">
-                        <div class="col-auto">
-                            <div class="card bg-primary border-light" style="width: 15rem;">
-                                <!-- <img src="..." class="card-img-top" alt="..."> -->
-                                <div class="card-body ">
-                                </div>
-                                <div class="card-footer bg-light">
-                                    <p class="card-text ">Service status1</p>
-                                    <a href='test'>
-                                        <p class="card-text text-small">Settings </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="btn-group" role="group" aria-label="Options">
+                    <button type="button" class="btn btn-primary">Share</button>
+                    <button type="button" class="btn btn-primary">Filters</button>
+                    <button type="button" class="btn btn-primary">Settings</button>
                 </div>
-
-                <div class="h-auto border rounded w-100 my-5">
-                    <h3 class="border">Rerource</h3>
-                    <!-- cards -->
-                    <div class="row g-3">
-                        <div class="col-auto">
-                            <div class="card bg-light border-light rounded-4" style="width: 30rem;">
-                                <div class="card-body ">
-                                    <h5 class="card-title ">JAS blog</h5>
-                                    <p class="card-text text-small">News, tutorials, and inspiration from the JAS Application</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="bg-primary container p-4"> -->
-                <div class="h-auto border w-100 p-4 bg-primary">
-                    <!-- content goes here -->
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="text-danger">
-                                Kyndryl
-                            </div>
-                            <div class="border">
-                                Privacy policy and cookie statement <br>
-                                by using of this application, you agree with <u>
-                                    following data privacy terms
-                                </u>
-                                .
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="border">Useful links </div>
-                            <div class="border my-2">Change Password</div>
-                            <div class="border my-2">About us</div>
-                            <div class="border my-2">History</div>
-                            <div class="border my-2">Privacy history</div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="border">Our Social network</div>
-                            <div class="border my-2">Yammer</div>
-                            <div class="border my-2">Teams</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="container my-2"> -->
-                <div class="h-auto border w-100 my-2">
-                    <!-- content goes here -->
-                    <div class="row">
-                        <div class="text-danger col-auto border"> Kyndryl </div>
-                        <div class="col-auto border">Privacy Policy</div>
-                        <div class="col-auto border">Terms of Service</div>
-                        <div class="col-auto border"> Feedback </div>
-                    </div>
-                </div>
+                    <canvas id="myChart"></canvas>
+                <!-- </div> -->
             </div>
 
 
         </main>
 
 
-        <script src="../bootstrap.bundle.js"></script>
+        <script src="../../bootstrap.bundle.js"></script>
+        <script >
+            function getGradient(ctx, chartArea) {
+              const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+              gradient.addColorStop(0, 'rgba(75, 192, 192, 0)'); // Start color with transparency
+              gradient.addColorStop(1, 'rgba(75, 192, 192, 0.3)'); // End color with transparency
+              return gradient;
+            }
 
-        <script src="sidebars.js"></script>
+   // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+   const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+   const data = {
+     labels: labels,
+     datasets: [{
+       label: 'My Dataset',
+       data: [65, 59, 80, 81, 56, 55, 40],
+       fill: true,
+       borderColor: 'rgb(75, 192, 192)',
+          backgroundColor: function(context) {
+            const chart = context.chart;
+            const {ctx, chartArea} = chart;
+            if (!chartArea) {
+              // This case happens on initial chart load
+              return null;
+            }
+            return getGradient(ctx, chartArea);
+          },
+       tension: 0.4, // Set the line tension to make it curved
+      // backgroundColor: Utils.CHART_COLORS.red,
+     }]
+   };
+
+
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        scales: {
+          x: {
+            grid: {
+              display: false
+            }
+          },
+          y: {
+            grid: {
+              display: false
+            }
+          }
+        }
+      },
+      datasets: [
+        {
+          label: 'My Dataset',
+          data: data,
+          borderColor: 'rgb(75, 192, 192)',
+        },
+      ],
+    };
+
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+
+
+        </script>
+
+        <script src="../sidebars.js"></script>
     </body>
 </html>
